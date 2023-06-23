@@ -10,8 +10,11 @@ public class InputData {
             String[] arrayData = data.split(" ");
             if (arrayData.length == 6) {
                 return arrayData;
-            } else {
-                System.out.println("данных не столько сколько нужно");
+            } if (arrayData.length < 6) {
+                System.out.println("данных мало");
+            }
+            else{
+                System.out.println("данных много");
             }
         }
 
